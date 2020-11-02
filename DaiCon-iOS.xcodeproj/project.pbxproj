@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B1F463B3254FA98C0089EB1D /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = B1F463B2254FA98C0089EB1D /* SwiftUICharts */; };
 		B1FC7931254E8B4300ABABFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FC7930254E8B4300ABABFF /* AppDelegate.swift */; };
 		B1FC7933254E8B4300ABABFF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FC7932254E8B4300ABABFF /* SceneDelegate.swift */; };
 		B1FC7937254E8B4400ABABFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1FC7936254E8B4400ABABFF /* Assets.xcassets */; };
@@ -52,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1F463B3254FA98C0089EB1D /* SwiftUICharts in Frameworks */,
 				B1FC7979254EB9D500ABABFF /* QGrid in Frameworks */,
 				B8B44B691367B08BCDC20B13 /* Pods_DaiCon_iOS.framework in Frameworks */,
 			);
@@ -169,6 +171,7 @@
 			name = "DaiCon-iOS";
 			packageProductDependencies = (
 				B1FC7978254EB9D500ABABFF /* QGrid */,
+				B1F463B2254FA98C0089EB1D /* SwiftUICharts */,
 			);
 			productName = "DaiCon-iOS";
 			productReference = B1FC792D254E8B4300ABABFF /* DaiCon-iOS.app */;
@@ -199,6 +202,7 @@
 			mainGroup = B1FC7924254E8B4300ABABFF;
 			packageReferences = (
 				B1FC7977254EB9D500ABABFF /* XCRemoteSwiftPackageReference "QGrid" */,
+				B1F463B1254FA98C0089EB1D /* XCRemoteSwiftPackageReference "ChartView" */,
 			);
 			productRefGroup = B1FC792E254E8B4300ABABFF /* Products */;
 			projectDirPath = "";
@@ -481,6 +485,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		B1F463B1254FA98C0089EB1D /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.4;
+			};
+		};
 		B1FC7977254EB9D500ABABFF /* XCRemoteSwiftPackageReference "QGrid" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Q-Mobile/QGrid";
@@ -492,6 +504,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		B1F463B2254FA98C0089EB1D /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B1F463B1254FA98C0089EB1D /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
 		B1FC7978254EB9D500ABABFF /* QGrid */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = B1FC7977254EB9D500ABABFF /* XCRemoteSwiftPackageReference "QGrid" */;
